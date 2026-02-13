@@ -1,70 +1,64 @@
 # Bank Customer Churn Analysis (SQL)
 
-## Project Overview
-This project analyzes customer churn for a banking industry dataset using SQL (MySQL).
-The goal is to identify which customer segments are most likely to leave the bank and provide business recommendations to reduce churn.
+## 🧠 Project Overview
+This project analyzes customer churn for the banking industry using SQL (MySQL).  
+The goal is to understand patterns in customer behavior and identify segments with the highest risk of churn.
 
-This project was completed as part of a **MentorMind Menternship (co-certified by UpGrad)**.
+**This project was completed as part of a MentorMind Menternship (co-certified by UpGrad).**
 
 ---
 
-## Problem Statement
-Customer churn is a major challenge for banks because losing customers directly impacts revenue and trust.
-This project answers questions like:
+## 💼 Problem Statement
+Customer churn is a major issue for banks because losing customers impacts revenue and future growth.  
+This analysis helps answer:
 - How many customers churned vs stayed?
-- Which regions have the highest churn?
-- Which customer segments are at higher churn risk?
+- Which segments are most likely to churn (by geography, gender, activity, number of products)?
+- What business steps can reduce churn?
 
 ---
 
-## Tools Used
-- **MySQL**
-- **SQL (DDL, DML, GROUP BY, CASE, Window Functions)**
-- Dataset: Bank Customer Churn Dataset (CSV)
+## 🛠️ Tools Used
+- **SQL (MySQL)** for querying and analysis  
+- **DDL & DML commands** to structure and manipulate data  
+- **Window functions** for ranking and segmentation
 
 ---
 
-## Dataset Summary
-- Total customers: **10,000**
-- Churned customers (Exited = 1): **2,037**
+## 📊 Dataset Summary
+- Dataset: Bank_Churn_Dataset.csv  
+- Total customers: **10,000**  
+- Churned customers (Exited = 1): **2,037**  
 - Retained customers (Exited = 0): **7,963**
 
 ---
 
-## Key Analysis Performed
-- Overall churn rate calculation
-- Churn by Geography
-- Churn by Gender
-- Churn by Activity (IsActiveMember)
-- Churn by Number of Products (NumOfProducts)
-- Churn by Balance Type (Zero vs Non-zero)
-- Top customers analysis using Window Functions
+## 🔍 Key Findings
+- **Germany** has the highest churn rate (**32.44%**)  
+- **Inactive members** churn much more than active members  
+- Customers with **3–4 products** have very high churn rates (up to 100%)
 
 ---
 
-## Key Insights (Highlights)
-- **Germany has the highest churn rate (32.44%)**
-- **Inactive customers churn much more (26.85%) than active customers (14.27%)**
-- Customers with **3 products (82.71%) and 4 products (100%)** show extremely high churn
-- Customers with **2 products** have the lowest churn rate (**7.58%**)
-- Non-zero balance customers are leaving more, meaning the bank may lose valuable customers
+## 📂 File Structure
+
+---Bank-Customer-Churn-Analysis-SQL/
+│── SQL/
+│ └── bank_churn_analysis.sql
+│── Report/
+│ └── churn_analysis_report.pdf
+│── Presentation/
+│ └── churn_presentation.pptx
+│── README.md
+
+## 📌 Deliverables
+- **SQL Code:** All queries used in the analysis  
+- **PDF Report:** Detailed analysis of churn patterns  
+- **Presentation:** Leadership slides with business recommendations
 
 ---
 
-## Business Recommendations
-- Focus retention strategy on **Germany**
-- Re-engage **inactive customers** using campaigns and loyalty benefits
-- Improve customer experience for **multi-product customers (3–4 products)**
-- Reduce extra charges (example: free ATM usage, lower service fees)
+## 👤 Author
+**Sofiyan Shaikh **  
+Mentorship – Customer Churn Analytics for the Banking Industry  
+MentorMind (co-certified by UpGrad)
 
----
-
-## Deliverables
-- SQL Code File (all queries used in analysis)
-- PDF Analysis Report
-- Leadership Presentation (PPT)
-
----
-
-## Author
-**Sofiyan Shaikh **
